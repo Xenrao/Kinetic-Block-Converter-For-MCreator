@@ -9,7 +9,7 @@ class SetupDialog(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("Kinetic Block Converter - Setup")
-        self.geometry("420x320")
+        self.geometry("420x400")
 
         self.confirmed = False
         self._build_ui()
