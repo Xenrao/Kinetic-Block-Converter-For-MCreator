@@ -22,6 +22,7 @@ class MainWindow(ctk.CTk):
         #self.resizable(False, False)
         self.selected_path = None
         self.undo_manager = UndoManager()
+        self.protocol("WM_DELETE_WINDOW", self._on_closing)
         self._setup_ui()
 
     # ================================================================
@@ -600,6 +601,13 @@ class MainWindow(ctk.CTk):
         mod_id = cfg.get('mod_id', 'createplugintest')
         return f"{self._mod_id_to_pascal(mod_id)}Mod"
     
+    def _on_closing(self):
+        try:
+            self.destroy()
+        except:
+            pass
+        finally:
+            os._exit(0)
     # ================================================================
     # LOG
     # ================================================================
