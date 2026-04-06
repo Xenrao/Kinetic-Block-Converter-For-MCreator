@@ -5,18 +5,18 @@
 * Be sure you activate API from Workspace Settings before use app
 
 
-DO NOT USE:
+* DO NOT USE:
     * **axis/no rotation** 
         * The block must use **D/U/N/S/W/E** rotation types,  (yet i guess)
 
     * Can plants sustain on this block (checkbox in Advanced properties tab)
-        * Kinetic block dosen't have that override.
+        - Kinetic block dosen't have that override.
 
     * The block's registry name must **not contain <ins>"BLOCK"</ins>**.
-        * It collides with my shitty code
+        - It collides with my shitty code
         
     * The block must **NOT have the <ins>"block entity"</ins> option enabled**.
-        * This app already adding a KineticBlockEntity, Adding a secondary block entity will cause a crash.
+        - This app already adding a KineticBlockEntity, Adding a secondary block entity will cause a crash.
 
 
 ---
